@@ -1,0 +1,6 @@
+<p>Hello Demo! NgRx</p>
+
+<select name="country" id="country" [(ngModel)]="countryId" (change)="selectChange()">
+    <option value="0">Select Country</option>
+    <option *ngFor="let country of countryList" [value]="country?.id">{{country?.name}}</option>
+</select>
